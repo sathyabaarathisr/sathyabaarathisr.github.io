@@ -41,12 +41,6 @@ section{margin-bottom:3.5rem;scroll-margin-top:52px}
 h2{font-size:1rem;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:var(--green);margin-bottom:1.4rem;display:flex;align-items:center;gap:.8rem;font-family:'Helvetica Neue',Arial,sans-serif}
 h2::after{content:'';flex:1;height:1.5px;background:var(--border)}
 
-.cv-box{background:var(--green-xlt);border:1px solid #b7e4c7;border-radius:6px;padding:1.2rem 1.5rem;display:flex;align-items:center;justify-content:space-between;gap:1rem;margin-bottom:2.5rem}
-.cv-box p{font-size:.95rem;color:var(--green-dark);line-height:1.5;font-family:'Helvetica Neue',Arial,sans-serif}
-.cv-box p small{display:block;font-size:.8rem;color:var(--green);margin-top:.15rem}
-.cv-btn{background:var(--green);color:#fff;padding:.55rem 1.4rem;border-radius:4px;font-size:.82rem;font-weight:500;white-space:nowrap;flex-shrink:0;font-family:'Helvetica Neue',Arial,sans-serif}
-.cv-btn:hover{background:var(--green-dark);text-decoration:none;color:#fff}
-
 .about-text p{font-size:1rem;color:var(--muted);line-height:1.9}
 .about-text p+p{margin-top:.9rem}
 .pills-label{font-size:.69rem;letter-spacing:.1em;text-transform:uppercase;color:var(--subtle);margin:1.2rem 0 .5rem;font-family:'Helvetica Neue',Arial,sans-serif}
@@ -95,7 +89,7 @@ h2::after{content:'';flex:1;height:1.5px;background:var(--border)}
 .tmeta{font-size:.79rem;color:var(--muted);display:block;margin-top:.08rem;font-family:'Helvetica Neue',Arial,sans-serif}
 .tbadge{display:inline-block;font-size:.65rem;background:var(--green-xlt);color:var(--green-dark);padding:1px 5px;border-radius:2px;margin-left:.3rem;border:1px solid #b7e4c7;font-family:'Helvetica Neue',Arial,sans-serif}
 
-.skills-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:.9rem}
+.skills-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:.9rem}
 .scard{background:var(--surface);border:1px solid var(--border);border-radius:6px;padding:1rem 1.1rem}
 .scard h3{font-size:.7rem;font-weight:600;letter-spacing:.09em;text-transform:uppercase;color:var(--green);margin-bottom:.6rem;font-family:'Helvetica Neue',Arial,sans-serif}
 .scard ul{list-style:none;padding:0}
@@ -122,10 +116,6 @@ h2::after{content:'';flex:1;height:1.5px;background:var(--border)}
 .press-pill:hover{border-color:var(--green);color:var(--green);text-decoration:none}
 .mdivider{border:none;border-top:1px solid var(--border);margin:1.6rem 0}
 
-.profile-row{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:.5rem}
-.plink{display:inline-flex;align-items:center;background:var(--surface);border:1px solid var(--border);border-radius:4px;padding:.35rem .85rem;font-size:.8rem;color:var(--muted);font-family:'Helvetica Neue',Arial,sans-serif}
-.plink:hover{border-color:var(--green);color:var(--green);text-decoration:none}
-
 footer{background:var(--surface);border-top:1px solid var(--border);text-align:center;padding:1.4rem;font-size:.79rem;color:var(--subtle);font-family:'Helvetica Neue',Arial,sans-serif}
 footer a{color:var(--green)}
 
@@ -137,7 +127,6 @@ footer a{color:var(--green)}
   .hero-text h1{font-size:1.7rem}
   .trow,.arow{grid-template-columns:1fr}.tdate,.ayear{margin-bottom:.1rem}
   .patent{flex-direction:column}
-  .cv-box{flex-direction:column;align-items:flex-start}
 }
 </style>
 </head>
@@ -148,7 +137,8 @@ footer a{color:var(--green)}
 <nav>
   <ul class="nav-links">
     <li><a href="#about">About</a></li>
-    <li><a href="#positions">Experience</a></li>
+    <li><a href="#positions">Positions</a></li>
+    <li><a href="#education">Education</a></li>
     <li><a href="#awards">Awards</a></li>
     <li><a href="#publications">Publications</a></li>
     <li><a href="#patents">Patents</a></li>
@@ -184,7 +174,6 @@ footer a{color:var(--green)}
 
 <main>
 
-
 <section id="about">
   <h2>About</h2>
   <div class="about-text">
@@ -208,13 +197,20 @@ footer a{color:var(--green)}
 </section>
 
 <section id="positions">
-  <h2>Positions &amp; Education</h2>
+  <h2>Positions</h2>
   <div class="timeline">
     <div class="trow"><div class="tdate">Oct 2021 – Present</div><div class="tdetail"><strong>Postdoctoral Associate</strong><span class="tsub">The Ucar Lab · The Jackson Laboratory for Genomic Medicine, Farmington, CT</span><span class="ttag">Systems Immunology · Aging · Multi-omics</span></div></div>
     <div class="trow"><div class="tdate">Sep 2020 – Sep 2021</div><div class="tdetail"><strong>Research Associate</strong><span class="tsub">Chandra Lab · Indian Institute of Science, Bangalore, India</span><span class="ttag">Infection Biology · Biomarkers</span></div></div>
     <div class="trow"><div class="tdate">Oct–Dec 2016</div><div class="tdetail"><strong>Visiting Student</strong><span class="tsub">Dept. of Applied Mathematics · University of Leeds, UK</span></div></div>
+    <div class="trow"><div class="tdate">Jul 2010 – Jan 2012</div><div class="tdetail"><strong>Bioinformatics Scientist</strong><span class="tsub">Vision Research Foundation · Sankara Nethralaya, India</span></div></div>
+  </div>
+</section>
+
+<section id="education">
+  <h2>Education</h2>
+  <div class="timeline">
     <div class="trow"><div class="tdate">Aug 2013 – Aug 2020</div><div class="tdetail"><strong>Ph.D. in Science</strong><span class="tsub">Indian Institute of Science, Bangalore, India</span></div></div>
-    <div class="trow"><div class="tdate">Jun 2006 – May 2010</div><div class="tdetail"><strong>B.Tech. in Bioinformatics</strong><span class="tsub">SASTRA University, Thanjavur, India · Dean's List 2008–2010</span></div></div>
+    <div class="trow"><div class="tdate">Jun 2006 – May 2010</div><div class="tdetail"><strong>B.Tech. in Bioinformatics</strong><span class="tsub">SASTRA University, Thanjavur, India</span></div></div>
   </div>
 </section>
 
@@ -224,8 +220,8 @@ footer a{color:var(--green)}
     <div class="arow"><div class="ayear">2026–2028</div><div class="atext">Robert E. Leet &amp; Clara Guthrie Patterson Trust Mentored Research Award<small>Health Resources in Action, Boston, MA</small></div></div>
     <div class="arow"><div class="ayear">2023–2024</div><div class="atext">Brooks Scholar Postdoctoral Fellowship<small>The Jackson Laboratory Cancer Center</small></div></div>
     <div class="arow"><div class="ayear">2023</div><div class="atext">AAI Trainee Abstract Award <span class="intl">National</span><small>American Association of Immunologists – IMMUNOLOGY 2023, Washington, DC</small></div></div>
-    <div class="arow"><div class="ayear">2023</div><div class="atext">Best Poster Award<small>32nd Annual Short Course on Experimental Models of Human Cancer · The Jackson Laboratory</small></div></div>
-    <div class="arow"><div class="ayear">2022</div><div class="atext">Best Poster Award<small>Sex Differences in the Immune System Meeting</small></div></div>
+    <div class="arow"><div class="ayear">2023</div><div class="atext">Best Poster Award<small>32nd Annual Short Course on Experimental Models of Human Cancer · The Jackson Laboratory, Bar Harbor, ME</small></div></div>
+    <div class="arow"><div class="ayear">2022</div><div class="atext">Best Poster Award<small>2nd Biennial Meeting, Sex Differences in the Immune System · Trinity College Dublin &amp; Whitehead Institute</small></div></div>
     <div class="arow"><div class="ayear">2018</div><div class="atext">Global Health Travel Award <span class="intl">International</span><small>Keystone Symposia – Translational Systems Immunology, Snowbird, UT</small></div></div>
     <div class="arow"><div class="ayear">2016</div><div class="atext">Global Travel Award <span class="intl">International</span><small>Boehringer Ingelheim Fonds</small></div></div>
     <div class="arow"><div class="ayear">2008–2010</div><div class="atext">Dean's List for Academic Excellence<small>SASTRA University, Thanjavur, India</small></div></div>
@@ -254,13 +250,17 @@ footer a{color:var(--green)}
     <div class="pub"><div class="pn">14</div><div class="pb">Gandra M, Umashankar V, Kasinathan N, Krishnan T, Ravichandran S, et al. <span class="t">Molecular screening of CYP4V2 gene in Bietti crystalline dystrophy.</span> <span class="j">Molecular Vision.</span> 2011; 17:1970.<span class="if">IF 1.4</span><a class="pbtn" href="https://pubmed.ncbi.nlm.nih.gov/21850171/" target="_blank">PMID</a></div></div>
   </div>
 
-  <div class="pub-sublabel">Preprints</div>
+  <div class="pub-sublabel">In Press</div>
   <div class="pub-list">
-    <div class="pub"><div class="pn">18</div><div class="pb">Grabauskas T, Trinity L, Verschoor CP, Marches R, Thibodeau A, Nehar-Belaid D, Eryilmaz G, Mahajan AS, Ravichandran S, et al. <span class="t">CMV-specific clonal expansion of Th1, GZMK⁺ CD8⁺, and TEMRA T cells revealed by human PBMC single-cell profiling.</span> <span class="j">Genome Biology.</span> In press.<span class="if">IF 9.1</span></div></div>
-    <div class="pub"><div class="pn">19</div><div class="pb">Ravichandran S, Bhatt B, Shah A, Das D, Balaji KN, Chandra N. <span class="t">Knock-down of a regulatory barcode shifts macrophage polarization from M1 to M2 and increases pathogen burden upon S. aureus infection.</span> <span class="j">eLife</span> (reviewed preprint, v2 Nov 2025).<a class="pbtn pre" href="https://doi.org/10.7554/eLife.91547.2" target="_blank">DOI</a></div></div>
+    <div class="pub"><div class="pn">15</div><div class="pb">Grabauskas T, Trinity L, Verschoor CP, Marches R, Thibodeau A, Nehar-Belaid D, Eryilmaz G, Mahajan AS, Ravichandran S, et al. <span class="t">CMV-specific clonal expansion of Th1, GZMK⁺ CD8⁺, and TEMRA T cells revealed by human PBMC single-cell profiling.</span> <span class="j">Genome Biology.</span> In press.<span class="if">IF 9.1</span></div></div>
   </div>
 
-  <p style="font-size:.8rem;color:var(--subtle);margin-top:1.2rem;font-family:'Helvetica Neue',Arial,sans-serif">Conference proceedings (15–17) available in the <a href="cv.pdf" target="_blank">full CV ↗</a></p>
+  <div class="pub-sublabel">Preprints</div>
+  <div class="pub-list">
+    <div class="pub"><div class="pn">16</div><div class="pb">Ravichandran S, Bhatt B, Shah A, Das D, Balaji KN, Chandra N. <span class="t">Knock-down of a regulatory barcode shifts macrophage polarization from M1 to M2 and increases pathogen burden upon S. aureus infection.</span> <span class="j">eLife</span> (reviewed preprint, v2 Nov 2025).<a class="pbtn pre" href="https://doi.org/10.7554/eLife.91547.2" target="_blank">DOI</a></div></div>
+  </div>
+
+  <p style="font-size:.8rem;color:var(--subtle);margin-top:1.2rem;font-family:'Helvetica Neue',Arial,sans-serif">Conference proceedings available in the <a href="cv.pdf" target="_blank">full CV ↗</a></p>
 </section>
 
 <section id="patents">
@@ -280,46 +280,109 @@ footer a{color:var(--green)}
   <div class="pub-sublabel">Invited talks &amp; podium presentations</div>
   <div class="talk-list">
     <div class="talk"><div class="tn">1</div><div class="tb"><em>Genomic Signatures of Acute Infections and Vaccine Responsiveness.</em><span class="tmeta">Ramaiah University of Applied Sciences, Bangalore · Dec 2025 · Invited talk</span></div></div>
-    <div class="talk"><div class="tn">2</div><div class="tb"><em>Distinct Baseline Immune Characteristics Associated with Responses to Pneumococcal Vaccines in Older Adults.</em><span class="tmeta">8th Northeast Glenn Symposium, Yale University · Oct 2024 · Podium</span></div></div>
-    <div class="talk"><div class="tn">3</div><div class="tb"><em>A single-cell transcriptome atlas of Fluzone responses in healthy young and older adults.</em><span class="tmeta">Systems Immunology in Aging, The Jackson Laboratory · Jun 2024 · Invited talk &amp; Co-organizer</span></div></div>
+    <div class="talk"><div class="tn">2</div><div class="tb"><em>Distinct Baseline Immune Characteristics Associated with Responses to Pneumococcal Vaccines in Older Adults.</em><span class="tmeta">8th Northeast Glenn Symposium on the Biology of Aging, Yale University · Oct 2024 · Podium</span></div></div>
+    <div class="talk"><div class="tn">3</div><div class="tb"><em>A single-cell transcriptome atlas of Fluzone responses in healthy young and older adults.</em><span class="tmeta">Systems Immunology in Aging and Complex Diseases, The Jackson Laboratory · Jun 2024 · Invited talk &amp; Co-organizer</span></div></div>
     <div class="talk"><div class="tn">4</div><div class="tb"><em>Distinct Immune Characteristics Associated with Vaccine Responsiveness in Older Adults.</em><span class="tmeta">AAI Annual Meeting – IMMUNOLOGY 2023, Washington, DC · Podium &amp; Poster <span class="tbadge">AAI Trainee Award</span></span></div></div>
     <div class="talk"><div class="tn">5</div><div class="tb"><em>Identification of a Robust Blood-Based Biomarker Signature for Chronic Systemic Inflammation.</em><span class="tmeta">Keystone Symposia – Translational Systems Immunology, Snowbird, UT · 2018 <span class="tbadge">Global Travel Award</span></span></div></div>
   </div>
   <div class="pub-sublabel" style="margin-top:1.2rem">Selected poster presentations</div>
   <div class="talk-list">
-    <div class="talk"><div class="tn">1</div><div class="tb"><em>Activation of cDC2 and monoDCs on Day 1 is associated with stronger Fluzone HD responses in older adults.</em><span class="tmeta">9th Northeast Glenn Foundation Symposium, University of Connecticut · 2025</span></div></div>
+    <div class="talk"><div class="tn">1</div><div class="tb"><em>Activation of cDC2 and monoDCs on Day 1 is associated with stronger responses to Fluzone HD in older adults.</em><span class="tmeta">9th Northeast Glenn Foundation Symposium, University of Connecticut · 2025</span></div></div>
     <div class="talk"><div class="tn">2</div><div class="tb"><em>Distinct baseline immune characteristics associated with responses to pneumococcal vaccines in older adults.</em><span class="tmeta">American Geriatrics Society Annual Meeting · 2024 · Presidential Poster Session</span></div></div>
-    <div class="talk"><div class="tn">3</div><div class="tb"><em>Pre-vaccination CD56dim CD16+ NK cells and Th1/Th17 ratio predict responsiveness to conjugated pneumococcal vaccine.</em><span class="tmeta">32nd Annual Short Course, The Jackson Laboratory · 2023 <span class="tbadge">Best Poster Award</span></span></div></div>
-    <div class="talk"><div class="tn">4</div><div class="tb"><em>Pre-vaccination CD56dim CD16+ NK cells and Th1/Th17 ratio predict responsiveness to conjugated pneumococcal vaccine.</em><span class="tmeta">Sex Differences in the Immune System · 2022 <span class="tbadge">Best Poster Award</span></span></div></div>
+    <div class="talk"><div class="tn">3</div><div class="tb"><em>Pre-vaccination CD56dim CD16+ NK cells and Th1/Th17 ratio predict responsiveness to conjugated pneumococcal vaccine in older individuals and contributes to sex differences.</em><span class="tmeta">32nd Annual Short Course on Experimental Models of Human Cancer, The Jackson Laboratory, Bar Harbor, ME · 2023 <span class="tbadge">Best Poster Award</span></span></div></div>
+    <div class="talk"><div class="tn">4</div><div class="tb"><em>Pre-vaccination CD56dim CD16+ NK cells and Th1/Th17 ratio predict responsiveness to conjugated pneumococcal vaccine in older individuals and contributes to sex differences.</em><span class="tmeta">2nd Biennial Meeting, Sex Differences in the Immune System · Trinity College Dublin &amp; Whitehead Institute · Nov 30–Dec 2, 2022 <span class="tbadge">Best Poster Award</span></span></div></div>
   </div>
 </section>
 
 <section id="skills">
   <h2>Technical Skills</h2>
   <div class="skills-grid">
-    <div class="scard"><h3>Multi-omics &amp; Proteomics</h3><ul><li>scRNA-seq (10x Genomics)</li><li>snATAC-seq</li><li>Bulk RNA-seq, NanoString nCounter</li><li>Olink proteomics</li><li>NULISAseq</li><li>Microarray (Affymetrix, Illumina)</li><li>Seurat, Scanpy, ArchR, Signac</li></ul></div>
-    <div class="scard"><h3>Computational &amp; ML</h3><ul><li>WGCNA, ARACNe, igraph</li><li>Genome-scale network modeling</li><li>Elastic net / LASSO, random forest</li><li>GSEA / pathway enrichment</li><li>UMAP, PCA, tSNE</li><li>Biomarker cross-validation</li></ul></div>
-    <div class="scard"><h3>Programming</h3><ul><li>R (tidyverse, ggplot2, Bioconductor)</li><li>Python (pandas, scikit-learn, scanpy)</li><li>Bash / Shell scripting</li><li>HPC / SLURM cluster computing</li></ul><div class="stags"><span class="stag">Git</span><span class="stag">Docker</span><span class="stag">Jupyter</span><span class="stag">Linux</span></div></div>
-    <div class="scard"><h3>Immunology &amp; Biology</h3><ul><li>Antibody response profiling</li><li>Human vaccine cohort studies</li><li>Innate &amp; adaptive immunity</li><li>Flow cytometry (analysis)</li><li>Sex-stratified immune profiling</li><li>Infection biology (viral, bacterial, TB)</li></ul></div>
+    <div class="scard">
+      <h3>Immunology &amp; Translational Research</h3>
+      <ul>
+        <li>Human vaccine cohort studies</li>
+        <li>Antibody response profiling</li>
+        <li>Innate &amp; adaptive immune analysis</li>
+        <li>Flow cytometry (analysis)</li>
+        <li>Sex-specific immune profiling</li>
+        <li>Infection biology (viral, bacterial, TB)</li>
+      </ul>
+    </div>
+    <div class="scard">
+      <h3>Multi-omic Profiling</h3>
+      <ul>
+        <li>scRNA-seq (10x Genomics)</li>
+        <li>snATAC-seq</li>
+        <li>Bulk RNA-seq, NanoString nCounter</li>
+        <li>Olink proteomics, NULISAseq</li>
+        <li>Microarray (Agilent, Affymetrix, Illumina)</li>
+        <li>Seurat, Scanpy, ArchR, Signac</li>
+      </ul>
+    </div>
+    <div class="scard">
+      <h3>Computational &amp; ML</h3>
+      <ul>
+        <li>WGCNA, ARACNe, igraph</li>
+        <li>Genome-scale network modeling</li>
+        <li>Elastic net / LASSO, random forest</li>
+        <li>GSEA / pathway enrichment</li>
+        <li>R (tidyverse, ggplot2, Bioconductor)</li>
+        <li>Python (pandas, scikit-learn, scanpy)</li>
+        <li>Bash / Shell · HPC / SLURM</li>
+      </ul>
+      <div class="stags"><span class="stag">Git</span><span class="stag">Docker</span><span class="stag">Jupyter</span><span class="stag">Linux</span></div>
+    </div>
   </div>
 </section>
 
 <section id="service">
   <h2>Professional Service</h2>
-  <div class="svc-block"><h3>Editorial</h3><ul class="svc-list"><li>Guest Associate Editor, <em>Aging and the Immune System</em>, Frontiers in Aging</li></ul></div>
-  <div class="svc-block"><h3>Peer review</h3><ul class="svc-list"><li>NPJ Vaccines · NPJ Digital Medicine · Frontiers in Immunology · Frontiers in Genetics · Frontiers in Aging · Frontiers in Endocrinology · Frontiers in Public Health · MDPI Diagnostics · MDPI Current Oncology</li></ul></div>
-  <div class="svc-block"><h3>Leadership &amp; memberships</h3><ul class="svc-list">
-    <li>Vice President (2023–2024), Women in Science and Engineering (WiSE), The Jackson Laboratory for Genomic Medicine</li>
-    <li>Invited Speaker &amp; Co-Organizer, Systems Immunology in Aging and Complex Diseases Symposium, JAX (2024); Moderator (2022, 2023)</li>
-    <li>American Association of Immunologists (AAI) – Associate Member</li>
-    <li>American Geriatrics Society (AGS) – Member</li>
-  </ul></div>
+
+  <div class="svc-block">
+    <h3>Editorial</h3>
+    <ul class="svc-list">
+      <li>Research Topic Editor &amp; Handling Editor — <em>Frontiers in Aging</em> · "Enhancing Vaccine Responsiveness in the Aging Population Through Advanced Immunology"</li>
+      <li>Associate Editor / Handling Editor — <em>Frontiers in Public Health</em>, <em>Frontiers in Immunology</em>, <em>Frontiers in Aging</em></li>
+    </ul>
+  </div>
+
+  <div class="svc-block">
+    <h3>Peer Review</h3>
+    <ul class="svc-list">
+      <li><em>npj Digital Medicine</em> · <em>npj Vaccines</em> · <em>Frontiers in Immunology</em> · <em>Frontiers in Endocrinology</em> · <em>Frontiers in Aging</em> · <em>Frontiers in Medicine</em> · <em>Frontiers in Genetics</em> · <em>Frontiers in Public Health</em> · <em>MDPI Cancers</em> · <em>MDPI Current Oncology</em> · <em>MDPI Diagnostics</em> · <em>BMC Infectious Diseases</em></li>
+    </ul>
+  </div>
+
+  <div class="svc-block">
+    <h3>Conference Leadership</h3>
+    <ul class="svc-list">
+      <li>Co-Organizer &amp; Abstract Evaluator — Systems Immunology in Aging and Complex Diseases Symposium, The Jackson Laboratory (2024)</li>
+      <li>Session Moderator — Systems Immunology in Aging and Complex Diseases Symposium, The Jackson Laboratory (2022, 2023)</li>
+    </ul>
+  </div>
+
+  <div class="svc-block">
+    <h3>Memberships &amp; Leadership</h3>
+    <ul class="svc-list">
+      <li>Vice President (2023–2024), Women in Science and Engineering (WiSE), The Jackson Laboratory for Genomic Medicine</li>
+      <li>American Association of Immunologists (AAI) – Associate Member</li>
+      <li>American Geriatrics Society (AGS) – Member</li>
+    </ul>
+  </div>
 </section>
 
 <section id="media">
   <h2>Media &amp; Press</h2>
 
-  
+  <div class="media-item">
+    <div class="media-header"><span class="yr">2026</span><span class="media-title">Why Do Vaccines Work for Some, But Not Others?</span></div>
+    <p class="media-paper">Related to: Ravichandran S et al. <em>Nature Immunology</em> 2024</p>
+    <div class="press-row">
+      <a class="press-pill" href="https://www.jax.org/news-and-insights/2026/january/why-do-vaccines-work-for-some-but-not-others-" target="_blank">JAX News ↗</a>
+    </div>
+  </div>
+
+  <hr class="mdivider">
 
   <div class="media-item">
     <div class="media-header"><span class="yr">2024</span><span class="media-title">Why Do Vaccines Not Work Well in Some Older Adults?</span></div>
@@ -365,7 +428,6 @@ footer a{color:var(--green)}
       <a class="press-pill" href="https://phys.org/news/2019-07-peptide-rapidly-multidrug-resistant-bacteria.html" target="_blank">Phys.org ↗</a>
     </div>
   </div>
-
 
 </section>
 
